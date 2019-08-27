@@ -39,6 +39,7 @@ body {
 .container nav .nav-links {
   display: flex;
   justify-content: space-around;
+  height: 100%;
   align-items: center;
   width: 50%;
 }
@@ -46,6 +47,15 @@ body {
   text-decoration: none;
   color: white;
   font-size: 1rem;
+  align-items: center;
+  width: 33%;
+  text-align: center;
+}
+.container nav .nav-links a:hover {
+  background-color: white;
+  color: black;
+  padding: 1.5rem 0;
+  font-weight: 400;
 }
 .container .jumbo {
   max-width: 1150px;
