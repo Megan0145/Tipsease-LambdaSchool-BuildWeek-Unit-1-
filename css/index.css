@@ -217,7 +217,7 @@ body {
   }
 }
 .container footer {
-  width: 100vw;
+  width: 100%;
   margin: 0;
   background-color: black;
   color: white;
@@ -235,5 +235,93 @@ body {
 @media (max-width: 500px) {
   .container footer img {
     width: 2rem;
+  }
+}
+.container .forms-container {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .container .forms-container {
+    flex-direction: column;
+  }
+}
+.container .forms-container .form-col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 2rem auto;
+}
+@media (max-width: 500px) {
+  .container .forms-container .form-col {
+    width: 75%;
+    border: 1px solid black;
+  }
+}
+.container .forms-container .form-col h2 {
+  text-decoration: underline;
+}
+.container .forms-container .form-col h4 {
+  margin: 1rem auto;
+  padding-bottom: 1rem;
+  width: 50%;
+  border-bottom: 1px solid black;
+}
+@media (max-width: 800px) {
+  .container .forms-container .form-col h4 {
+    width: 75%;
+  }
+}
+.container .forms-container .form-col form input,
+.container .forms-container .form-col select {
+  text-align: center;
+  width: 50%;
+  margin: 0.75rem;
+  height: 2rem;
+  border: 1px solid black;
+}
+@media (max-width: 800px) {
+  .container .forms-container .form-col form input,
+  .container .forms-container .form-col select {
+    width: 75%;
+  }
+}
+.container .forms-container .form-col .google-login {
+  border: 1px solid black;
+  width: 50%;
+  margin: 1rem auto;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .container .forms-container .form-col .google-login {
+    width: 75%;
+  }
+}
+.container .forms-container .form-col .sign-me-up {
+  width: 50%;
+  height: 2.2rem;
+  background-color: #2ECC71;
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  margin: 0.75rem 0;
+}
+@media (max-width: 800px) {
+  .container .forms-container .form-col .sign-me-up {
+    width: 75%;
+  }
+}
+.container .forms-container .bori {
+  border-right: 1px solid black;
+}
+@media (max-width: 500px) {
+  .container .forms-container .bori {
+    border-right: none;
   }
 }

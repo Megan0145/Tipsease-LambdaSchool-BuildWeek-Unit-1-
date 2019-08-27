@@ -232,7 +232,7 @@ body {
     }
 
     footer {
-        width: 100vw;
+        width: 100%;
         margin: 0;
         background-color: black;
         color: white;
@@ -248,6 +248,91 @@ body {
 
             @media @mobile {
                 width: 2rem;
+            }
+        }
+    }
+
+    .forms-container {
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+        text-align: center;
+
+        @media @mobile {
+            flex-direction: column;
+        }
+
+        .form-col{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 2rem auto;
+
+            @media @mobile {
+                width: 75%;
+                border: 1px solid black;
+            }
+
+            h2 {
+                text-decoration: underline;
+            }
+            h4 {
+                margin: 1rem auto;
+                padding-bottom: 1rem;
+                width: 50%;
+                border-bottom: 1px solid black;
+
+                @media @tablet {
+                    width: 75%;
+                }
+            }
+
+            form input, select {
+                text-align: center;
+                width: 50%;
+                margin: 0.75rem;
+                height: 2rem;
+                border: 1px solid black;
+
+                @media @tablet {
+                    width: 75%;
+                }
+            }
+
+            .google-login {
+                border: 1px solid black;
+                width: 50%;
+                margin: 1rem auto;
+                padding: 1rem 0;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                @media @tablet {
+                    width: 75%;
+                }
+            }
+
+            .sign-me-up {
+                width: 50%;
+                height: 2.2rem;
+                background-color: #2ECC71;
+                border: none;
+                color: white;
+                font-size: 1.3rem;
+                margin: 0.75rem 0;
+
+                @media @tablet {
+                    width: 75%;
+                }
+        }}
+
+        .bori {
+            border-right: 1px solid black;
+
+            @media @mobile {
+                border-right: none;
             }
         }
     }
