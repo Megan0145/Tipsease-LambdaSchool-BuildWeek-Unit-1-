@@ -63,12 +63,34 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 800px) {
+  .container .intro {
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+}
 .container .intro .intro-img {
   width: 40%;
+}
+@media (max-width: 800px) {
+  .container .intro .intro-img {
+    width: 100%;
+  }
 }
 .container .intro .intro-img img {
   width: 100%;
   margin: 2rem;
+}
+@media (max-width: 800px) {
+  .container .intro .intro-img img {
+    width: 75%;
+  }
+}
+@media (max-width: 500px) {
+  .container .intro .intro-img img {
+    display: none;
+  }
 }
 .container .intro .intro-text {
   display: flex;
@@ -76,6 +98,14 @@ body {
   justify-content: space-between;
   width: 40%;
   padding: 2% 4% 2% 2%;
+}
+@media (max-width: 800px) {
+  .container .intro .intro-text {
+    width: 75%;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
 }
 .container .intro .intro-text h2 {
   font-size: 1.9rem;
@@ -104,11 +134,23 @@ body {
   width: 100%;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  .container .sign-up .sign-up-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .container .sign-up .sign-up-content .sign-up-col {
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .container .sign-up .sign-up-content .sign-up-col {
+    width: 75%;
+    margin-bottom: 2rem;
+  }
 }
 .container .sign-up .sign-up-content .sign-up-col h3 {
   text-decoration: underline;
@@ -116,9 +158,15 @@ body {
 .container .sign-up .sign-up-content .sign-up-col .step-box {
   width: 50%;
   text-align: center;
+  margin-bottom: 2rem;
 }
 .container .sign-up .sign-up-content .bori {
   border-right: 1px solid black;
+}
+@media (max-width: 500px) {
+  .container .sign-up .sign-up-content .bori {
+    border-right: none;
+  }
 }
 .container .sign-up .sign-up-content .sign-me-up {
   width: 48%;
@@ -127,6 +175,11 @@ body {
   border: none;
   color: white;
   font-size: 1.3rem;
+}
+@media (max-width: 500px) {
+  .container .sign-up .sign-up-content .sign-me-up {
+    width: 85%;
+  }
 }
 .container .browse-businesses {
   margin: 0;
@@ -147,6 +200,12 @@ body {
   font-size: 1.3rem;
   margin: 0;
 }
+@media (max-width: 500px) {
+  .container .browse-businesses .sign-me-up {
+    height: 3rem;
+    font-size: 1rem;
+  }
+}
 .container footer {
   width: 100vw;
   margin: 0;
@@ -157,4 +216,14 @@ body {
 }
 .container footer img {
   padding: 1rem;
+}
+@media (max-width: 800px) {
+  .container footer img {
+    width: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .container footer img {
+    width: 2rem;
+  }
 }
