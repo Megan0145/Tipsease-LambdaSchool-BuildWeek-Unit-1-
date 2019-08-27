@@ -215,24 +215,120 @@ body {
             border: none;
             color: white;
             font-size: 1.3rem;
-            margin-top: 2rem;
+            margin: 2rem 0;
 
             @media @mobile {
                 width: 85%;
             }
         }
+        border-bottom: 1px solid black;
     }
 
+    .browse-workers {
+        width:100%;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        margin: 0 auto;
+        .browse-workers-header {
 
+            width: 100%;
+
+            h1 {
+                font-size: 2rem;
+                border: 1px solid black;
+                width: 50%;
+                text-align: center;
+                margin: 0 auto;
+    
+                @media @tablet {
+                    background-color: black;
+                    color: white;
+                    margin: 0 auto;
+                    text-align: center;
+                    padding: 1rem 0;
+                    width: 75%;
+                }
+
+                @media @mobile {
+                    font-size: 1.9rem;
+                    padding: 1.5rem;
+                }
+            }
+        }
+
+
+        .browse-workers-header {
+            margin-bottom: 2rem;
+        }
+
+        .browse-workers-content {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+
+            @media @tablet {
+            flex-direction: column;
+            align-items: center;
+            }
+
+            .browse-workers-col {
+                width: 40%;
+                text-align: center;
+
+                @media @tablet {
+                    width: 75%
+                }
+
+                @media @mobile {
+                    width: 85%;
+                }
+
+                .browse-workers-box {
+                    padding: 2.5rem;
+                    border: 1px solid black;
+                    margin-bottom: 4rem;
+                    img {
+                        width: 75%;
+                    }
+
+                    .send-tip-btn {
+                        width: 75%;
+                        background-color: #2ECC71;
+                        height: 3rem;
+                        border: none;
+                        color: white;
+                        font-size: 1.3rem;
+                        margin: 2rem 0;
+            
+                        @media @tablet {
+            
+                        }
+
+                        @media @mobile {
+                            width: 85%;
+                        }
+                    }
+                }
+            }
+            
+        }
+        .browse {
+            background-color: black;
+            color: white;
+            width: 50%;
+            padding: 1.5rem;
+            font-size: 1.3rem;
+            margin-bottom: 4rem;
+        }
+    }
 
 
     .browse-businesses {
         margin: 0;
         width: 100%;
-        max-width: 1150px;
         img {
             width: 100%;
-            max-width:1150px;
             margin-bottom: -10px;
         }    
 
@@ -258,18 +354,10 @@ body {
         background-color: black;
         color: white;
         display: flex;
-        justify-content: space-around;
-
+        justify-content: center;
         img {
-            padding: 1rem;
-
-            @media @tablet {
-                width: 3rem;
-            }
-
-            @media @mobile {
-                width: 2rem;
-            }
+            padding: 3rem;
+            width: 2rem;
         }
     }
 
