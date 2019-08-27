@@ -5,9 +5,10 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 .container {
-  width: 99vw;
+  width: 100%;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -58,6 +59,9 @@ body {
   font-weight: 400;
 }
 .container section {
+  width: 100%;
+}
+.container .jumbo {
   width: 100%;
 }
 .container .jumbo img {
@@ -142,6 +146,7 @@ body {
   align-items: center;
   width: 100%;
   max-width: 1150px;
+  margin: 0 auto;
   margin-bottom: 3rem;
 }
 .container .sign-up .sign-up-content {
@@ -156,7 +161,7 @@ body {
   }
 }
 .container .sign-up .sign-up-content .sign-up-col {
-  width: 50%;
+  width: 48%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -193,26 +198,27 @@ body {
     border-right: none;
   }
 }
-.container .sign-up .sign-up-content .sign-me-up {
+.container .sign-up .sign-me-up {
   width: 48%;
   background-color: #2ECC71;
   height: 2.3rem;
   border: none;
   color: white;
   font-size: 1.3rem;
+  margin-top: 2rem;
 }
 @media (max-width: 500px) {
-  .container .sign-up .sign-up-content .sign-me-up {
+  .container .sign-up .sign-me-up {
     width: 85%;
   }
 }
 .container .browse-businesses {
   margin: 0;
-  width: 100vw;
+  width: 100%;
   max-width: 1150px;
 }
 .container .browse-businesses img {
-  width: 100vw;
+  width: 100%;
   max-width: 1150px;
   margin-bottom: -10px;
 }
