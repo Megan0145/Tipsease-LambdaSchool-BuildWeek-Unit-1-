@@ -43,7 +43,7 @@ body {
 }
 .container nav .nav-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
   width: 50%;
 }
@@ -51,6 +51,7 @@ body {
   text-decoration: none;
   color: white;
   font-size: 1rem;
+  padding: 1rem;
   align-items: center;
   text-align: center;
 }
@@ -65,7 +66,7 @@ body {
   margin-right: 1rem;
 }
 .container nav .nav-links a img.active {
-  width: 1.5em;
+  width: 1.5rem;
   height: 1.5rem;
 }
 .container section {
@@ -165,11 +166,11 @@ body {
   font-size: 5rem;
   width: 80%;
   margin: 4rem auto;
+  text-align: center;
 }
 @media (max-width: 800px) {
   .container .sign-up .sign-up-header h2 {
     font-size: 3rem;
-    text-align: center;
   }
 }
 .container .sign-up .sign-up-content {
@@ -248,7 +249,7 @@ body {
   text-align: center;
 }
 .container .sign-up .sign-me-up {
-  width: 100%;
+  width: 78%;
   background-color: #2ECC71;
   height: 4rem;
   border: none;
@@ -258,7 +259,7 @@ body {
 }
 @media (max-width: 500px), (max-width: 800px) {
   .container .sign-up .sign-me-up {
-    width: 85%;
+    width: 91%;
   }
 }
 .container .browse-workers {
@@ -304,11 +305,46 @@ body {
   align-items: center;
   margin-bottom: 2rem;
 }
+@media (max-width: 800px) {
+  .container .browse-workers .browse-workers-header .searchbar {
+    flex-direction: column;
+  }
+  .container .browse-workers .browse-workers-header .searchbar img {
+    display: none;
+  }
+}
 .container .browse-workers .browse-workers-header .searchbar input,
 .container .browse-workers .browse-workers-header .searchbar select {
   margin-left: 1rem;
-  width: 10rem;
+  width: 15rem;
   text-align: center;
+  border-radius: 5px;
+  height: 1.8rem;
+  border: none;
+}
+@media (max-width: 800px) {
+  .container .browse-workers .browse-workers-header .searchbar input,
+  .container .browse-workers .browse-workers-header .searchbar select {
+    width: 25rem;
+    margin-bottom: 2rem;
+  }
+}
+.container .browse-workers .browse-workers-header .searchbar button {
+  margin-left: 1rem;
+}
+.container .browse-workers .browse-workers-header .searchbar .go {
+  width: 5rem;
+  height: 2rem;
+  border-radius: 6px;
+  background-color: #2ECC71;
+  color: white;
+  font-size: 1rem;
+  border: none;
+}
+@media (max-width: 800px) {
+  .container .browse-workers .browse-workers-header .searchbar .go {
+    width: 15rem;
+  }
 }
 .container .browse-workers .browse-workers-header {
   margin-bottom: 2rem;
@@ -363,7 +399,6 @@ body {
 .container .browse-workers .browse {
   background-color: black;
   color: white;
-  width: 50%;
   padding: 1.5rem;
   font-size: 1.3rem;
   margin-bottom: 4rem;
