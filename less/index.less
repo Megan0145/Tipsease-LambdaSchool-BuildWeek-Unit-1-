@@ -283,15 +283,18 @@ body {
         margin: 0 auto;
         .browse-workers-header {
 
-            width: 100%;
+            width: 90%;
+            padding: 1rem ;
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
 
             h1 {
                 font-size: 2rem;
-                border: 1px solid black;
-                width: 50%;
-                text-align: center;
-                margin: 0 auto;
-    
                 @media @tablet {
                     background-color: black;
                     color: white;
@@ -306,6 +309,19 @@ body {
                     padding: 1.5rem;
                 }
             }
+            .searchbar {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 2rem;
+
+                input, select {
+                    margin-left: 1rem;
+                    width: 10rem;
+                    text-align: center;
+                }
+            }
+
         }
 
 

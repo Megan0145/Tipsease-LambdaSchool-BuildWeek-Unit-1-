@@ -269,14 +269,18 @@ body {
   margin: 0 auto;
 }
 .container .browse-workers .browse-workers-header {
-  width: 100%;
+  width: 90%;
+  padding: 1rem ;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
 }
 .container .browse-workers .browse-workers-header h1 {
   font-size: 2rem;
-  border: 1px solid black;
-  width: 50%;
-  text-align: center;
-  margin: 0 auto;
 }
 @media (max-width: 800px) {
   .container .browse-workers .browse-workers-header h1 {
@@ -293,6 +297,18 @@ body {
     font-size: 1.9rem;
     padding: 1.5rem;
   }
+}
+.container .browse-workers .browse-workers-header .searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.container .browse-workers .browse-workers-header .searchbar input,
+.container .browse-workers .browse-workers-header .searchbar select {
+  margin-left: 1rem;
+  width: 10rem;
+  text-align: center;
 }
 .container .browse-workers .browse-workers-header {
   margin-bottom: 2rem;
