@@ -22,12 +22,16 @@ body {
   justify-content: space-around;
   background-color: black;
   color: white;
+  position: fixed;
+  top: 0;
   width: 100%;
+  padding: 0.75rem 0;
 }
 .container nav .nav-header {
   display: flex;
   align-items: center;
-  width: 40%;
+  width: 50%;
+  margin-left: 2rem;
 }
 .container nav .nav-header img {
   margin: 0 1rem;
@@ -40,7 +44,6 @@ body {
 .container nav .nav-links {
   display: flex;
   justify-content: space-around;
-  height: 100%;
   align-items: center;
   width: 50%;
 }
@@ -49,14 +52,21 @@ body {
   color: white;
   font-size: 1rem;
   align-items: center;
-  width: 33%;
   text-align: center;
 }
-.container nav .nav-links a:hover {
-  background-color: white;
-  color: black;
-  padding: 1.5rem 0;
-  font-weight: 400;
+.container nav .nav-links a.active {
+  font-size: 1.5rem;
+}
+.container nav .nav-links a img {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  margin-right: 1rem;
+}
+.container nav .nav-links a img.active {
+  width: 1.5em;
+  height: 1.5rem;
 }
 .container section {
   width: 100%;
@@ -66,6 +76,7 @@ body {
 }
 .container .jumbo img {
   width: 100%;
+  padding-top: 92px;
   margin-bottom: -20px;
 }
 .container .intro {
