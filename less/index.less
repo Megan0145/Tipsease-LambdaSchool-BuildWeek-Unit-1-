@@ -6,6 +6,7 @@
 //variables
 @mobile: ~"(max-width: 500px)";
 @tablet: ~"(max-width: 800px)";
+@desktop: ~"(max-width: 800px)";
 
 body {
     margin: 0;
@@ -88,12 +89,13 @@ body {
 
     .jumbo {
        width: 100%;
-        // max-width: 1150px;
         img {    
           width:100%;  
           padding-top: 92px;  
-          margin-bottom: -20px; 
+          margin-bottom: -10px; 
+          max-height: 630px;
         }    
+
     }
 
     .intro {
@@ -101,71 +103,53 @@ body {
         width: 100%;
         color: white;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-
-        @media @tablet {
+       
+        .intro-text {
+            padding: 2rem;
+            width: 50%;
+            display: flex;
             flex-direction: column;
+            
+            h2 {
+                margin-top: 0;
+            }
+
+        }
+        .intro-img {
             text-align: center;
-            padding-bottom: 2rem;
+            padding: 2rem;
+            width: 50%;
+            height: 50%;
+            img {
+                width: 100%;
+                max-height: 465px;
+                height: 100%;
+
+                @media @tablet {
+                    display: none;
+                }
+            }
         }
 
-            .intro-img {
-                width: 40%;
-                @media @tablet {
-                    width: 100%;
-                }
-            }
-            
-            .intro-img img{
+
+
+        .sign-me-up {
+            width: 48%;
+            background-color: #2ECC71;
+            height: 2.3rem;
+            border: none;
+            color: white;
+            font-size: 1.3rem;
+
+            @media @mobile {
                 width: 100%;
-                margin: 2rem;
-
-                @media @tablet {
-                    width: 75%;
-                }
-                @media @mobile {
-                    display:none;
-                }
+                
             }
-            .intro-text {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                width: 40%;
-                height: 100%;
-                margin: 1rem;
-
-                @media @tablet {
-                    width: 75%;
-                    padding: 0;
-                    margin: 0;
-                    text-align: left;
-                }
-
-                h2 {
-                    font-size: 1.9rem;
-                }
-
-                p {
-                    font-size: 1.3rem;
-                }
-
-                .sign-me-up {
-                    width: 48%;
-                    background-color: #2ECC71;
-                    height: 2.3rem;
-                    border: none;
-                    color: white;
-                    font-size: 1.3rem;
-
-                    @media @mobile {
-                        width: 100%;
-                        
-                    }
-                }
-            }
+        }
     }
+    
 
     .sign-up {
         display: flex;
@@ -275,13 +259,13 @@ body {
         border-bottom: 1px solid black;
     }
 
-    .browse-workers {
+    .browse-workers-home {
         width:100%;
         display: flex;
         flex-direction:column;
         align-items: center;
         margin: 0 auto;
-        .browse-workers-header {
+        .browse-workers-header-home {
 
             width: 90%;
             padding: 1rem ;
@@ -356,11 +340,11 @@ body {
 
         }
 
-        .browse-workers-header {
+        .browse-workers-header-home {
             margin-bottom: 2rem;
         }
 
-        .browse-workers-content {
+        .browse-workers-content-home {
             width: 100%;
             display: flex;
             justify-content: space-evenly;
@@ -370,7 +354,7 @@ body {
             align-items: center;
             }
 
-            .browse-workers-col {
+            .browse-workers-col-home {
                 width: 40%;
                 text-align: center;
 
@@ -382,7 +366,7 @@ body {
                     width: 85%;
                 }
 
-                .browse-workers-box {
+                .browse-workers-box-home {
                     padding: 2.5rem;
                     border: 1px solid black;
                     margin-bottom: 4rem;
@@ -444,6 +428,105 @@ body {
             }
         }
     }
+
+    .browse-workers {
+        width:100%;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        margin: 0 auto;
+        .browse-workers-header {
+
+            width: 100%;
+
+            .searchbar {
+                display: flex;
+                background-color: black;
+                padding: 1rem 0 ;
+                width: 100%;
+                color: white;
+                justify-content: center;
+                align-items: center;
+                margin: 6rem 0 2rem 0;
+
+                @media @tablet {
+                    flex-direction: column;
+                    img {
+                        display: none;
+                    }
+                }
+
+                input, select {
+                    margin-left: 1rem;
+                    width: 15rem;
+                    text-align: center;
+                    border-radius: 5px;
+                    height: 1.8rem;
+                    border: none;
+
+                    @media @tablet {
+                        width: 25rem;
+                        margin-bottom: 2rem;
+                    }
+                }
+
+                button {
+                    margin-left: 1rem;
+
+                }
+                .go {
+                    width: 5rem;
+                    height:2rem;
+                    border-radius: 6px;
+                    background-color: #2ECC71;
+                    color: white;
+                    font-size: 1rem;
+                    border: none;
+                    @media @tablet {
+                        width: 15rem;
+                    }
+                }
+            }
+
+        }
+
+        .browse-workers-content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .browse-workers-row {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+
+                .browse-workers-box {
+                    width: 20%;
+                    @media @tablet {
+                        width: 50%;
+                    }
+                    border: 1px solid black;
+
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+            
+        }
+        .browse {
+            background-color: black;
+            color: white;
+            padding: 1.5rem;
+            font-size: 1.3rem;
+            margin-bottom: 4rem;
+        }
+    }
+
+
+
+
+
 
     footer {
         width: 100%;
