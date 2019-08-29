@@ -632,11 +632,18 @@ body {
   align-items: center;
   margin: 0 auto;
   text-align: center;
+  margin-top: 4rem;
+}
+@media (max-width: 800px) {
+  .container .forms-container {
+    margin-top: 6rem;
+  }
 }
 @media (max-width: 500px) {
   .container .forms-container {
     flex-direction: column;
     height: auto;
+    margin-top: 8rem;
   }
 }
 .container .forms-container .form-col {

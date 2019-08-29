@@ -653,10 +653,16 @@ body {
         align-items: center;
         margin: 0 auto;
         text-align: center;
+        margin-top: 4rem;
+
+        @media @tablet{
+            margin-top: 6rem;
+        }
 
         @media @mobile {
             flex-direction: column;
             height: auto;
+            margin-top: 8rem;
         }
 
         .form-col{
