@@ -120,12 +120,19 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media @tablet {
+            flex-direction: column;
+        }
        
         .intro-text {
             padding: 2rem;
             width: 50%;
             display: flex;
             flex-direction: column;
+
+            @media @tablet {
+                width: 80%;
+            }
 
             h2 {
                 margin-top: 0;
@@ -136,7 +143,6 @@ body {
             text-align: center;
             padding: 2rem;
             width: 50%;
-            height: 50%;
             img {
                 width: 100%;
                 max-height: 465px;
