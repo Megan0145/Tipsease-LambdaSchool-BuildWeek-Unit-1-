@@ -26,13 +26,16 @@ body {
     nav {
         display: flex;
         align-items: center;
-        justify-content: space-around;;
+        justify-content: space-around;
         background-color: black;
         color: white;
+        // padding: 1rem;
         position: fixed;
         top: 0;
         width: 100%;
-        padding: 0.75rem 0;
+        @media (max-width: 650px){
+            flex-direction: column;
+        }
        
     
         .nav-header {
@@ -40,6 +43,10 @@ body {
             align-items: center;
             width: 50%;
             margin-left: 2rem;
+            @media (max-width: 650px){
+              width:100%;
+              justify-content: center;
+            }
             img{
                 margin:0 1rem;
                 width:3.8rem;
@@ -54,6 +61,11 @@ body {
             justify-content: flex-end;
             align-items: center;
             width: 50%;
+            @media (max-width: 650px){
+                width:100%;
+                justify-content: center;
+                flex-direction: row-reverse;
+              }
 
             a {
                 text-decoration: none;
@@ -91,9 +103,12 @@ body {
        width: 100%;
         img {    
           width:100%;  
-          padding-top: 92px;  
+          padding-top: 52px;  
           margin-bottom: -10px; 
           max-height: 630px;
+          @media (max-width: 650px){
+              padding-top: 120px;
+          }
         }    
 
     }
@@ -447,15 +462,18 @@ body {
                 color: white;
                 justify-content: center;
                 align-items: center;
-                margin: 6rem 0 2rem 0;
+                margin: 4.5rem 0 2rem 0;
                  
                 @media (max-width: 870px){
-                    margin-top: 118px;
-                    
+                    margin-top: 5.8rem;
+                }
+                @media (max-width:650px) {
+                    margin-top: 8.4rem;
                 }
 
                 @media @tablet {
                     flex-direction: column;
+                    padding:2rem 0;
                     img {
                         display: none;
                     }
