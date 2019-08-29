@@ -111,7 +111,7 @@ body {
             width: 50%;
             display: flex;
             flex-direction: column;
-            
+
             h2 {
                 margin-top: 0;
             }
@@ -448,6 +448,11 @@ body {
                 justify-content: center;
                 align-items: center;
                 margin: 6rem 0 2rem 0;
+                 
+                @media (max-width: 870px){
+                    margin-top: 118px;
+                    
+                }
 
                 @media @tablet {
                     flex-direction: column;
@@ -499,17 +504,93 @@ body {
                 width: 100%;
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: space-around;
+                justify-content: space-evenly;
 
                 .browse-workers-box {
                     width: 20%;
+                    margin-bottom: 2rem;
+                    text-align: center;
                     @media @tablet {
                         width: 50%;
+                    }
+                    @media @mobile {
+                        width: 75%;
                     }
                     border: 1px solid black;
 
                     display: flex;
                     flex-direction: column;
+                    align-items: center;
+                    padding: 2rem;
+
+                    img {
+                        width: 80%;
+                    }
+
+                    &.hide {
+                        @media (max-width: 900px) {
+                            display: none;
+                        }
+                    }
+                    .send-tip-btn {
+                        width: 75%;
+                        background-color: #2ECC71;
+                        height: 3rem;
+                        border: none;
+                        color: white;
+                        font-size: 1.3rem;
+                        margin: 2rem 0 0.75rem 0;
+            
+                        @media @tablet {
+            
+                        }
+
+                        @media @mobile {
+                            width: 85%;
+                        }
+                    }
+
+                    &.worker-enlarge {
+                        width: 51.2%;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        @media (max-width: 900px) {
+                            width: 83.5%;
+                        }
+                        @media @tablet {
+                            width: 50%;
+                            flex-direction: column;
+                        }
+                        @media @mobile {
+                            width: 75%;
+                        }
+                        
+                        img {
+                            width: 40%;
+
+                            @media @tablet {
+                                width: 80%;
+                            }
+                        }
+                        .worker-info {
+                            width: 40%;
+                            padding: 2rem;
+                            text-align: left;
+                            @media @tablet {
+                                width: 80%;
+                            }
+                        }
+                        .send-tip-btn {
+                            width: 90%;
+                            margin-bottom: 0.75rem;
+                            @media @mobile {
+                                width: 85%;
+                            }
+                        }
+                       
+                    }
+                
                 }
             }
             
