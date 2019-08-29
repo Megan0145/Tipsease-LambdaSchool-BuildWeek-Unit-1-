@@ -1,0 +1,19 @@
+//mixins 
+.blackAndWhite() {
+    background-color: black;
+    color: white;
+}
+
+.green-btn(@btnWidth, @btnHeight, @fontSize) {
+    width: @btnWidth;
+    height: @btnHeight;
+    background-color: @green-btn-bg-color;
+    border: none;
+    color: white;
+    font-size: @fontSize;
+
+    @media @mobile {
+        width: 100%;
+
+    }
+}

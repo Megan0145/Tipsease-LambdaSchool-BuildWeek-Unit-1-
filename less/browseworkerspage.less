@@ -55,7 +55,7 @@
                     width: 5rem;
                     height:2rem;
                     border-radius: 6px;
-                    background-color: #2ECC71;
+                    background-color: @green-btn-bg-color;
                     color: white;
                     font-size: 1rem;
                     border: none;
@@ -104,18 +104,10 @@
                             display: none;
                         }
                     }
-                    .send-tip-btn {
-                        width: 75%;
-                        background-color: #2ECC71;
-                        height: 3rem;
-                        border: none;
-                        color: white;
-                        font-size: 1.3rem;
+                    button {
+                        .green-btn(75%, 3rem, 1.3rem);
                         margin: 2rem 0 0.75rem 0;
             
-                        @media @tablet {
-            
-                        }
 
                         @media @mobile {
                             width: 85%;
@@ -153,8 +145,8 @@
                                 width: 80%;
                             }
                         }
-                        .send-tip-btn {
-                            width: 90%;
+                        button {
+                            .green-btn(90%);
                             margin-bottom: 0.75rem;
                             @media @mobile {
                                 width: 85%;
